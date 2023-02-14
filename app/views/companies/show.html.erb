@@ -6,3 +6,12 @@
 <p>
 <a href="/companies">Back to all companies</a>
 </p>
+
+<ul>
+    <% for contact in @contacts %>
+        <li>
+                <%= contact["first_name"] %>
+                <%= contact["last_name"] %>
+        </li>
+    <% end %>
+</ul>
